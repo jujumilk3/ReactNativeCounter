@@ -6,3 +6,5 @@
 - android: npx react-native run-android  
 - ios: npx react-native run-ios
 
+#### test
+git test
