@@ -3,6 +3,6 @@
 2. cd ios && pod install
 
 #### run
-android: npx react-native run-android
-ios: npx react-native run-ios
+- android: npx react-native run-android  
+- ios: npx react-native run-ios
 
