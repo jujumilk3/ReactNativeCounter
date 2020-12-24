@@ -10,7 +10,6 @@ import {
 } from '../screens/index';
 import config from '../config/config';
 
-// console.log(config);
 const Drawer = createDrawerNavigator();
 let showOtherPage = false;
 if (config.NODE_ENV === 'development' && config.DEBUG) {
