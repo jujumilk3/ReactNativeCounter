@@ -10,7 +10,7 @@ import {
 } from '../screens/index';
 import config from '../config/config';
 
-console.log(config);
+// console.log(config);
 const Drawer = createDrawerNavigator();
 let showOtherPage = false;
 if (config.NODE_ENV === 'development' && config.DEBUG) {
@@ -21,11 +21,27 @@ export default function AppNavigator() {
   return (
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
-        <Drawer.Screen name="Counter" component={CounterScreen} />
-        <Drawer.Screen name="Calendar" component={CalendarScreen} />
-        <Drawer.Screen name="List" component={ListScreen} />
+        <Drawer.Screen
+          options={{headerShown: true}}
+          name="Counter"
+          component={CounterScreen}
+        />
+        <Drawer.Screen
+          options={{headerShown: true}}
+          name="Calendar"
+          component={CalendarScreen}
+        />
+        <Drawer.Screen
+          options={{headerShown: true}}
+          name="List"
+          component={ListScreen}
+        />
         {showOtherPage && (
-          <Drawer.Screen name="Others" component={OtherScreen} />
+          <Drawer.Screen
+            options={{headerShown: true}}
+            name="Others"
+            component={OtherScreen}
+          />
         )}
       </Drawer.Navigator>
     </NavigationContainer>

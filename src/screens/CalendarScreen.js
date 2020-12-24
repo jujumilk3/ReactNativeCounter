@@ -115,7 +115,7 @@ class CalendarScreen extends React.Component {
                 onLongPress={() => {
                   Alert.alert(prop.title, 'Delete', [
                     {text: 'O', onPress: () => this.deleteCountItem(prop.date)},
-                    {text: 'X', onPress: () => Alert.alert('X')},
+                    {text: 'X', onPress: () => function () {}},
                   ]);
                 }}
                 key={key}>
